@@ -21,14 +21,14 @@ class LiveSupportPage extends StatelessWidget {
             elevation: 2,
             color: Colors.white,
             child: InkWell(
-              onTap: () {},
+              onTap: (){},
               child: Container(
-                  margin: const EdgeInsets.only(left: 5),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.arrow_back_ios),
-                    color: Colors.pink,
-                  )
+                margin: const EdgeInsets.only(left: 5),
+                child: const Icon(
+                  Icons.arrow_back_ios,
+                  size: 15.0,
+                  color: const Color(0xffbe047d),
+                ),
               ),
             ),
           ),
@@ -62,11 +62,11 @@ class LiveSupportPage extends StatelessWidget {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.only(top: 200, left: 28, right: 28),
+        padding: EdgeInsets.only(top: 200, left: 38, right: 38),
         child: GridView.count(
           crossAxisCount: 2,
-          crossAxisSpacing: 37.27,
-          mainAxisSpacing: 75.73,
+          crossAxisSpacing: 45,
+          mainAxisSpacing: 45,
           children: [
             InkWell(
               onTap: () {
